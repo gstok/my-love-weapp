@@ -32,8 +32,10 @@ export default class extends wepy.app {
   }
 
   constructor () {
-    super()
-    this.use('requestfix')
+    super();
+    //应用Promise
+    this.use("promisify");
+    //this.use('requestfix');
   }
 
   onLaunch() {

@@ -92,7 +92,7 @@
 
   export default class Index extends wepy.page {
     config = {
-      navigationBarTitleText: 'test'
+        navigationBarTitleText: "天才养猪少女"
     }
     components = {
       panel: Panel,
@@ -218,7 +218,18 @@
       }
     }
 
-    onLoad() {
+    async onLoad() {
+
+        console.log("你好，世界");
+
+        let result = await wepy.request({
+            url: "https://www.91weixin.net/queryMsg",
+            method: "POST",
+            data: { },
+        });
+        console.log(result);
+
+
       let self = this
       this.$parent.getUserInfo(function (userInfo) {
         if (userInfo) {
