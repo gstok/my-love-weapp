@@ -32,16 +32,16 @@ import 'wepy-async-function'
                 backgroundColor: "white",
                 list: [
                     {
-                        selectedIconPath: "./assets/icons/words_active.png",
-                        iconPath: "./assets/icons/words.png",
-                        pagePath: "pages/index",
-                        text: "言叶"
-                    },
-                    {
                         selectedIconPath: "./assets/icons/count_active.png",
                         iconPath: "./assets/icons/count.png",
                         pagePath: "pages/index",
                         text: "星盘"
+                    },
+                    {
+                        selectedIconPath: "./assets/icons/words_active.png",
+                        iconPath: "./assets/icons/words.png",
+                        pagePath: "pages/index",
+                        text: "言叶"
                     },
                 ]
             }

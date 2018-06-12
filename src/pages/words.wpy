@@ -1,0 +1,47 @@
+
+<style>
+
+</style>
+
+<template>
+    <view>你好</view>
+</template>
+
+<script>
+    import wepy from "wepy";
+
+    export default class pageWords extends wepy.page {
+        
+        config = {
+            navigationBarTitleText: "天才养猪少女"
+        }
+
+        components = {
+
+        }
+
+        mixins = []
+
+        data = {
+
+        }
+
+        computed = {
+
+        }
+
+        methods = {
+
+        }
+
+        events = {
+
+        }
+
+        async onLoad() {
+
+        }
+    };
+</script>
+
+
