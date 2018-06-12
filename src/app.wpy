@@ -14,58 +14,78 @@ import wepy from 'wepy'
 import 'wepy-async-function'
 
 
-export default class extends wepy.app {
-  config = {
-    pages: [
-      'pages/index'
-    ],
-    window: {
-      backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+    export default class extends wepy.app {
+        config = {
+            pages: [
+                "pages/index",
+            ],
+            window: {
+                backgroundTextStyle: "light",
+                navigationBarBackgroundColor: "#ffc0cb",
+                navigationBarTitleText: "WeChat",
+                navigationBarTextStyle: "black"
+            },
+            tabBar: {
+                color: "#a9b7b7",
+                selectedColor: "#ffc0cb",
+                borderStyle: "black",
+                backgroundColor: "white",
+                list: [
+                    {
+                        selectedIconPath: "./assets/icons/words_active.png",
+                        iconPath: "./assets/icons/words.png",
+                        pagePath: "pages/index",
+                        text: "言叶"
+                    },
+                    {
+                        selectedIconPath: "./assets/icons/count_active.png",
+                        iconPath: "./assets/icons/count.png",
+                        pagePath: "pages/index",
+                        text: "星盘"
+                    },
+                ]
+            }
+        }
+
+    globalData = {
+        userInfo: null
     }
-  }
 
-  globalData = {
-    userInfo: null
-  }
-
-  constructor () {
-    super();
-    //应用Promise
-    this.use("promisify");
-    //this.use('requestfix');
-  }
-
-  onLaunch() {
-    this.testAsync()
-  }
-
-  sleep (s) {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve('promise resolved')
-      }, s * 1000)
-    })
-  }
-
-  async testAsync () {
-    const data = await this.sleep(3)
-    console.log(data)
-  }
-
-  getUserInfo(cb) {
-    const that = this
-    if (this.globalData.userInfo) {
-      return this.globalData.userInfo
+    constructor () {
+        super();
+        //应用Promise
+        this.use("promisify");
+        //this.use('requestfix');
     }
-    wepy.getUserInfo({
-      success (res) {
-        that.globalData.userInfo = res.userInfo
-        cb && cb(res.userInfo)
-      }
-    })
-  }
-}
+
+    onLaunch() {
+        this.testAsync()
+    }
+
+    sleep (s) {
+        return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('promise resolved')
+        }, s * 1000)
+        })
+    }
+
+    async testAsync () {
+        const data = await this.sleep(3)
+        console.log(data)
+    }
+
+    getUserInfo(cb) {
+        const that = this
+        if (this.globalData.userInfo) {
+        return this.globalData.userInfo
+        }
+        wepy.getUserInfo({
+        success (res) {
+            that.globalData.userInfo = res.userInfo
+            cb && cb(res.userInfo)
+        }
+        })
+    }
+    }
 </script>
