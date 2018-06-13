@@ -19,35 +19,35 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var pageWords = function (_wepy$page) {
-        _inherits(pageWords, _wepy$page);
+var pageAstrolabe = function (_wepy$page) {
+        _inherits(pageAstrolabe, _wepy$page);
 
-        function pageWords() {
+        function pageAstrolabe() {
                 var _ref;
 
                 var _temp, _this, _ret;
 
-                _classCallCheck(this, pageWords);
+                _classCallCheck(this, pageAstrolabe);
 
                 for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
                         args[_key] = arguments[_key];
                 }
 
-                return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = pageWords.__proto__ || Object.getPrototypeOf(pageWords)).call.apply(_ref, [this].concat(args))), _this), _this.config = {
-                        navigationBarTitleText: "言叶"
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = pageAstrolabe.__proto__ || Object.getPrototypeOf(pageAstrolabe)).call.apply(_ref, [this].concat(args))), _this), _this.config = {
+                        navigationBarTitleText: "星盘"
                 }, _this.components = {}, _this.mixins = [], _this.data = {}, _this.computed = {}, _this.methods = {}, _this.events = {}, _temp), _possibleConstructorReturn(_this, _ret);
         }
 
-        _createClass(pageWords, [{
+        _createClass(pageAstrolabe, [{
                 key: "onLoad",
                 value: function onLoad() {}
         }]);
 
-        return pageWords;
+        return pageAstrolabe;
 }(_wepy2.default.page);
 
 
-Page(require('./../npm/wepy/lib/wepy.js').default.$createPage(pageWords , 'pages/words'));
+Page(require('./../npm/wepy/lib/wepy.js').default.$createPage(pageAstrolabe , 'pages/astrolabe'));
 
 ;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndvcmRzLmpzIl0sIm5hbWVzIjpbInBhZ2VXb3JkcyIsImNvbmZpZyIsIm5hdmlnYXRpb25CYXJUaXRsZVRleHQiLCJjb21wb25lbnRzIiwibWl4aW5zIiwiZGF0YSIsImNvbXB1dGVkIiwibWV0aG9kcyIsImV2ZW50cyIsIndlcHkiLCJwYWdlIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFDSTs7Ozs7Ozs7Ozs7O0lBRXFCQSxTOzs7Ozs7Ozs7Ozs7Ozt3TUFFakJDLE0sR0FBUztBQUNMQyxnREFBd0I7QUFEbkIsaUIsUUFJVEMsVSxHQUFhLEUsUUFJYkMsTSxHQUFTLEUsUUFFVEMsSSxHQUFPLEUsUUFJUEMsUSxHQUFXLEUsUUFJWEMsTyxHQUFVLEUsUUFJVkMsTSxHQUFTLEU7Ozs7O3lDQUlBLENBRVI7Ozs7RUE5QmtDQyxlQUFLQyxJOztrQkFBdkJWLFM7QUErQnBCIiwiZmlsZSI6IndvcmRzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbiAgICBpbXBvcnQgd2VweSBmcm9tIFwid2VweVwiO1xyXG5cclxuICAgIGV4cG9ydCBkZWZhdWx0IGNsYXNzIHBhZ2VXb3JkcyBleHRlbmRzIHdlcHkucGFnZSB7XHJcbiAgICAgICAgXHJcbiAgICAgICAgY29uZmlnID0ge1xyXG4gICAgICAgICAgICBuYXZpZ2F0aW9uQmFyVGl0bGVUZXh0OiBcIuiogOWPtlwiXHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICBjb21wb25lbnRzID0ge1xyXG5cclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIG1peGlucyA9IFtdXHJcblxyXG4gICAgICAgIGRhdGEgPSB7XHJcblxyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgY29tcHV0ZWQgPSB7XHJcblxyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgbWV0aG9kcyA9IHtcclxuXHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICBldmVudHMgPSB7XHJcblxyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgb25Mb2FkKCkge1xyXG5cclxuICAgICAgICB9XHJcbiAgICB9O1xyXG4iXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzdHJvbGFiZS5qcyJdLCJuYW1lcyI6WyJwYWdlQXN0cm9sYWJlIiwiY29uZmlnIiwibmF2aWdhdGlvbkJhclRpdGxlVGV4dCIsImNvbXBvbmVudHMiLCJtaXhpbnMiLCJkYXRhIiwiY29tcHV0ZWQiLCJtZXRob2RzIiwiZXZlbnRzIiwid2VweSIsInBhZ2UiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUNJOzs7Ozs7Ozs7Ozs7SUFFcUJBLGE7Ozs7Ozs7Ozs7Ozs7O2dOQUVqQkMsTSxHQUFTO0FBQ0xDLGdEQUF3QjtBQURuQixpQixRQUlUQyxVLEdBQWEsRSxRQUliQyxNLEdBQVMsRSxRQUVUQyxJLEdBQU8sRSxRQUlQQyxRLEdBQVcsRSxRQUlYQyxPLEdBQVUsRSxRQUlWQyxNLEdBQVMsRTs7Ozs7eUNBSUEsQ0FFUjs7OztFQTlCc0NDLGVBQUtDLEk7O2tCQUEzQlYsYTtBQStCcEIiLCJmaWxlIjoiYXN0cm9sYWJlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbiAgICBpbXBvcnQgd2VweSBmcm9tIFwid2VweVwiO1xyXG5cclxuICAgIGV4cG9ydCBkZWZhdWx0IGNsYXNzIHBhZ2VBc3Ryb2xhYmUgZXh0ZW5kcyB3ZXB5LnBhZ2Uge1xyXG4gICAgICAgIFxyXG4gICAgICAgIGNvbmZpZyA9IHtcclxuICAgICAgICAgICAgbmF2aWdhdGlvbkJhclRpdGxlVGV4dDogXCLmmJ/nm5hcIlxyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgY29tcG9uZW50cyA9IHtcclxuXHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICBtaXhpbnMgPSBbXVxyXG5cclxuICAgICAgICBkYXRhID0ge1xyXG5cclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIGNvbXB1dGVkID0ge1xyXG5cclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIG1ldGhvZHMgPSB7XHJcblxyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgZXZlbnRzID0ge1xyXG5cclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIG9uTG9hZCgpIHtcclxuXHJcbiAgICAgICAgfVxyXG4gICAgfTtcclxuIl19

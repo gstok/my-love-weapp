@@ -4,7 +4,7 @@
 </style>
 
 <template>
-    <view>你好</view>
+    <view>言叶</view>
 </template>
 
 <script>
@@ -13,7 +13,7 @@
     export default class pageWords extends wepy.page {
         
         config = {
-            navigationBarTitleText: "天才养猪少女"
+            navigationBarTitleText: "言叶"
         }
 
         components = {
@@ -38,7 +38,7 @@
 
         }
 
-        async onLoad() {
+        onLoad() {
 
         }
     };
