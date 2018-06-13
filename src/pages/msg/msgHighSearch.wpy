@@ -1,0 +1,112 @@
+
+<style>
+
+</style>
+
+<template>
+    <view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+        <view class="page__hd">
+            <view class="page__title">Input</view>
+            <view class="page__desc">表单输入</view>
+        </view>
+        <view class="page__bd">
+            <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
+
+            <view class="weui-cells__title">关键词</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" placeholder="输入需要查找的关键词吧" />
+                    </view>
+                </view>
+            </view>
+
+            <view class="weui-cells__title">起始时间</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" placeholder="输入需要查找的关键词吧" />
+                    </view>
+                </view>
+            </view>
+
+            <view class="weui-cells__title">截止时间</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" placeholder="输入需要查找的关键词吧" />
+                    </view>
+                </view>
+            </view>
+
+            <view class="weui-cells__title">消息类型</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_switch">
+                    <view class="weui-cell__bd">我发送的消息</view>
+                    <view class="weui-cell__ft">
+                        <switch checked></switch>
+                    </view>
+                </view>
+            </view>
+
+            <view class="weui-cells__title">选择</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_select">
+                    <view class="weui-cell__bd">
+                        <picker bindchange="bindAccountChange" value="{{ index }}" range="{{ list }}">
+                            <view class="weui-select">{{ list[index] }}</view>
+                        </picker>
+                    </view>
+                </view>
+            </view>
+
+            <view class="weui-btn-area">
+                <button class="weui-btn" type="primary" bindtap="search">搜索</button>
+            </view>
+        </view>
+    </view>
+</template>
+
+<script>
+    import wepy from "wepy";
+
+    export default class pageWeuiWxss extends wepy.page {
+
+        config = {
+            navigationBarTitleText: "高级查找"
+        }
+
+        components = {
+
+        }
+
+        mixins = []
+
+        data = {
+            index: 0,
+            list: ["李老三", "王老二", "张老六"],
+        }
+
+        computed = {
+
+        }
+
+        methods = {
+            search () {
+
+            },
+
+            bindAccountChange (e) {
+                console.log(e);
+            }
+        }
+
+        events = {
+
+        }
+
+        onLoad () {
+
+        }
+    };
+</script>

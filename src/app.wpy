@@ -57,6 +57,7 @@
                 "pages/words",
                 "pages/weui-wxss",
                 "pages/template",
+                "pages/msg/msgHighSearch",
             ],
             window: {
                 backgroundTextStyle: "light",
@@ -79,7 +80,7 @@
                     {
                         selectedIconPath: "./assets/icons/words_active.png",
                         iconPath: "./assets/icons/words.png",
-                        pagePath: "pages/template",
+                        pagePath: "pages/msg/msgHighSearch",
                         text: "言叶"
                     },
                 ]
